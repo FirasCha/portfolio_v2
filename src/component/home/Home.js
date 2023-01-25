@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const Home = () => {
   return (
-    <section className=''>
+    <section className='image__section'>
         <Swiper className='img__container'
         modules={[Pagination]}
         spaceBetween={40}
