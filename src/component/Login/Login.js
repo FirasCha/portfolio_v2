@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './login.css';
 import profile from '../../assets/a.png'
 import email from '../../assets/email.jpg'
 import pass from '../../assets/pass.png'
 
-
-const Login = () => {
+class Login extends Component  {
+  render(){
   return (
     <div className="main">
      <div className="sub-main">
@@ -13,10 +13,7 @@ const Login = () => {
          <div className="imgs">
            <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
-
            </div>
-
-
          </div>
          <div>
            <h1>Login Page</h1>
@@ -26,24 +23,20 @@ const Login = () => {
            </div>
            <div className="second-input">
              <img src={pass} alt="pass" className="email"/>
-             <input type="password" placeholder="user name" className="name"/>
+             <input type="password" placeholder="pass" className="name"/>
            </div>
           <div className="login-button">
           <button>Login</button>
-          </div>
-           
+          </div>           
             <p className="link">
               <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
-            </p>
-           
- 
+            </p>           
          </div>
        </div>
-       
-
      </div>
     </div>
-  )
+  );
+}
 }
 
 export default Login

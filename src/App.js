@@ -3,6 +3,8 @@ import Header from './component/header/Header';
 import Nav from './component/nav/Nav';
 import Home from './component/home/Home';
 import { Quotes } from './component/quotes/Quotes';
+import NotFound from './component/Notfound/Notfound';
+import Footer from './component/footer/Footer';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Home/>
         <Quotes/>
         <Nav/>
+        <NotFound/>
+        <Footer/>
     </div>
   );
 }

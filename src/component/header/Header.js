@@ -28,7 +28,8 @@ const Header = () => {
                 <a href="#about" onClick={() => setActiveNav('#about') } className={activeNav === '#about' ? 'active' : ''}><ImInfo/> About</a>
                 <Link to="/login">Login</Link>
                 <Routes>
-                    <Route path="/login" element={<Login />} />  
+                    <Route path="/login" component={Login}/>  
+                    
                 </Routes>
                 {/* <a onClick={Login} ><IoMdLogIn/> Login</a> */}
             </div>
