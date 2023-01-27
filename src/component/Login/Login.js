@@ -29,7 +29,7 @@ class Login extends Component  {
           <button>Login</button>
           </div>           
             <p className="link">
-              <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
+              <a href="#">Forgot password ?</a> Or<a href="#"> Sign Up</a>
             </p>           
          </div>
        </div>

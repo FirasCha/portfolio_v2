@@ -5,16 +5,21 @@ import Home from './component/home/Home';
 import { Quotes } from './component/quotes/Quotes';
 import NotFound from './component/Notfound/Notfound';
 import Footer from './component/footer/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './component/Login/Login';
 
 function App() {
   return (
     <div>
+      <BrowserRouter>
         <Header/>
-        <Home/>
-        <Quotes/>
-        <Nav/>
-        <NotFound/>
+        <Routes>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/Notfound' element={<NotFound />}></Route>
+        </Routes>
         <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
