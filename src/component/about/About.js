@@ -1,9 +1,1 @@
-import React from 'react'
-
-const About = () => {
-  return (
-    <div></div>
-  )
-}
-
-export default About
+// https://github.com/soumyajit4419/Portfolio/tree/master/src/components/About

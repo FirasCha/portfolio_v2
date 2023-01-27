@@ -7,8 +7,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './component/Login/Login';
 import Contact from './component/contact/Contact';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import About from './component/about/About';
 import Nav from './component/nav/Nav';
+import About from './component/about/About';
+import "./style.css";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
+          {/* <Route path='/about' element={<About/>}></Route> */}
           <Route path='/Notfound' element={<NotFound/>}></Route>
         </Routes>
         <Nav/>

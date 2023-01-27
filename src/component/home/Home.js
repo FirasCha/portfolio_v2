@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../../assets/logo.png'
+import avatar from '../../assets/logo1.png'
 import './home.css'
 
 import { Pagination } from 'swiper';
