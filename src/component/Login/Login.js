@@ -1,39 +1,65 @@
 import React, { Component } from 'react'
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
 import './login.css';
-import profile from '../../assets/a.png'
-import email from '../../assets/email.jpg'
-import pass from '../../assets/pass.png'
+import { useNavigate } from "react-router-dom";
+import Home from '../home/Home';
+// import profile from '../../assets/a.png'
+// import email from '../../assets/email.jpg'
+// import pass from '../../assets/pass.png'
 
 class Login extends Component  {
+ 
+  handleSubmit = e => {
+    const nav = useNavigate();
+    e.preventDefault();
+    console.log(e.target.email.value);
+
+    if (!e.target.email.value) {
+      alert("Name is required");
+    } else if (!e.target.email.value) {
+      alert("Valid email is required");
+    } else if (!e.target.password.value) {
+      alert("Password is required");
+    } else if (
+      
+      e.target.email.value === "admin" &&
+      e.target.password.value === "admin"
+    ) {
+      nav('/');
+      // alert("Successfully logged in");
+      // e.target.email.value = "";
+      // e.target.password.value = "";
+       
+    } else {
+      alert("Wrong name or password combination");
+    }
+  };
+
+  handleClick = e => {
+    e.preventDefault();
+  };
+  
   render(){
   return (
-    <div className="main">
-     <div className="sub-main">
-       <div>
-         <div className="imgs">
-           <div className="container-image">
-             <img src={profile} alt="profile" className="profile"/>
-           </div>
-         </div>
-         <div>
-           <h1>Login Page</h1>
-           <div>
-             <img src={email} alt="email" className="email"/>
-             <input type="text" placeholder="user name" className="name"/>
-           </div>
-           <div className="second-input">
-             <img src={pass} alt="pass" className="email"/>
-             <input type="password" placeholder="pass" className="name"/>
-           </div>
-          <div className="login-button">
-          <button>Login</button>
-          </div>           
-            <p className="link">
-              <a href="#">Forgot password ?</a> Or<a href="#"> Sign Up</a>
-            </p>           
-         </div>
-       </div>
-     </div>
+    <div className="App">
+        <img className="logo" />
+        <form className="form" onSubmit={this.handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="email">Name</label>
+            <input type="text" name="email" placeholder="Name" />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input type="password" name="password" placeholder="Password"/>
+          </div>
+          <button className="primary">Login</button>
+        </form>
+        
+          <button className="secondary" onClick={this.handleClick}>
+            Create an account
+          </button>
+        
+        
     </div>
   );
 }

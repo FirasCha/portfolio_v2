@@ -27,11 +27,8 @@ const Home = () => {
               <SwiperSlide><img  src={avatar} alt='Avatar One'/></SwiperSlide>
           </div>
           </Swiper>
-          
       </section>
       <Quotes/>
-      <Nav/>
-      <NotFound/>
     </div>
     
   )
