@@ -27,21 +27,21 @@ export const Quotes = () => {
   
     const { content, author } = quotes;
   return (
-    <div className="home-section">
+    // <div className="home-section">
     <div className="box-centerside">
         <div className="text">
             <p>{content}</p>
         </div>
         <div className="author">
             <h5>{author}</h5>
-            <div className="button-container">
+            {/* <div className="button-container">
                 <button className="twitter-button" onClick={tweetQuote}>
                     <i className="fab fa-twitter"></i>
                 </button>
                 <button onClick={getNewQuote}>New Quote</button>
-            </div>
+            </div> */}
         </div>
-  </div>
-  </div>
+  {/* </div> */}
+    </div>
   )
 }

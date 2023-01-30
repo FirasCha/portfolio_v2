@@ -46,7 +46,7 @@ const Home = () => {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> FIRAS CHAOUCH</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -66,7 +66,7 @@ const Home = () => {
         </Container>
       </Container>
       <Home2/>
-      <Quotes/>
+      {/* <Quotes/> */}
     </section>
     </div>
     

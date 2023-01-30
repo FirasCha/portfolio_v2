@@ -36,7 +36,7 @@
       display: flex;
       justify-content: space-between;
     }
-  
+/*   
     button {
       cursor: pointer;
       font-size: 1.2rem;
@@ -45,12 +45,12 @@
       color: #fff;
       background: #8A2387; 
       background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      outline: none;
+      /* background: linear-gradient(to right, #F27121, #E94057, #8A2387); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      /* outline: none;
       padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-    }
+    } */ 
   
-  button:hover {
+  /* button:hover {
     filter: brightness(110%);
     border: none;
     outline:0;
@@ -73,7 +73,7 @@
   .twitter-button:hover {
     color: #38a1f3;
     filter: brightness(120%);
-  }
+  } */
     
   .fa-twitter {
     font-size: 1.5rem;

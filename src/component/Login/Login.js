@@ -42,15 +42,15 @@ class Login extends Component  {
   render(){
   return (
     <div className="App">
-        <img className="logo" />
+        {/* <img className="logo" /> */}
         <form className="form" onSubmit={this.handleSubmit}>
           <div className="input-group">
             <label htmlFor="email">Name</label>
-            <input type="text" name="email" placeholder="Name" />
+            <input type="text" name="email" placeholder="Name" required/>
           </div>
           <div className="input-group">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" placeholder="Password"/>
+            <input type="password" name="password" placeholder="Password" required/>
           </div>
           <button className="primary">Login</button>
         </form>
