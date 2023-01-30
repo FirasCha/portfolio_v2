@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Nav from './component/nav/Nav';
 import About from './component/about/About';
 import "./style.css";
+import Trythings from './component/Trythings/Trythings';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/Notfound' element={<NotFound/>}></Route>
+          <Route path='/trythings' element={<Trythings/>}></Route>
         </Routes>
         <Nav/>
         <Footer/>

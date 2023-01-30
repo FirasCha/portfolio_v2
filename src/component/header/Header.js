@@ -1,25 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './header.css'
 import{AiOutlineHome} from 'react-icons/ai'
 import{RiContactsFill} from 'react-icons/ri'
 import{ImInfo} from 'react-icons/im'
 import{IoMdLogIn} from 'react-icons/io'
-import{TbError404} from 'react-icons/tb'
+import{TbError404,TbLayoutNavbar} from 'react-icons/tb'
 import {Link} from "react-router-dom";
 
 const Header = () => {
-    const [expand, updateExpanded] = useState(false);
-    const [navColour, updateNavbar] = useState(false);
-  
-    function scrollHandler() {
-      if (window.scrollY >= 20) {
-        updateNavbar(true);
-      } else {
-        updateNavbar(false);
-      }
-    }
-  
-    window.addEventListener("scroll", scrollHandler);
+    
   return (
         <header className='header'>
             <div>
@@ -29,6 +18,7 @@ const Header = () => {
                     </Link>
                     <div className="header-right">                    
                         <Link to="/"><AiOutlineHome/> Home</Link>
+                        <Link to="/trythings"><TbLayoutNavbar/> Trythings</Link>
                         <Link to="/contact"><RiContactsFill/> Contact</Link>
                         <Link to="/about"><ImInfo/> About</Link>
                         {/* <a href="#about" onClick={() => setActiveNav('#about') } className={activeNav === '#about' ? 'active' : ''}><ImInfo/> About</a> */}
