@@ -318,6 +318,7 @@ html {
   }
   
   .home-about-section {
+    background-image: var(--image-gradient), url(./assets/home-bg.jpg);
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;

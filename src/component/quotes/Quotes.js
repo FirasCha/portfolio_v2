@@ -27,6 +27,7 @@ export const Quotes = () => {
   
     const { content, author } = quotes;
   return (
+    <div className="home-section">
     <div className="box-centerside">
         <div className="text">
             <p>{content}</p>
@@ -40,6 +41,7 @@ export const Quotes = () => {
                 <button onClick={getNewQuote}>New Quote</button>
             </div>
         </div>
+  </div>
   </div>
   )
 }
